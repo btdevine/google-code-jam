@@ -8,6 +8,8 @@ Practice
 
 Est Time: 5 hours
 (to be fair, half that time was figuring out I/O)
+Total Attempts: 19
+(lots of these were I/O issues and me playing around)
 # Code Jam Done: 1
 '''
 
@@ -85,7 +87,7 @@ def solve():
         while a[i] == a[j] and j < n-1:
             j += 1
         # if the char is behind the next (different) char in the alphabet, double it
-        if ord(a[i]) < ord(a[j]):
+        if a[i] < a[j]:
             b += a[i] + a[i]
         # otherwise don't double it
         else:
